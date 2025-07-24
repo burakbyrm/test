@@ -1,0 +1,118 @@
+:root {
+    --color-background: #f6f6f6;
+    --color-text-primary: #0c0407;
+    --color-text-secondary: #666666;
+    --color-text-light: #aebcd4;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-accent-1: #1fa5a3;
+    --color-accent-2: #e1511a;
+    --color-accent-3: #f4b700;
+    --color-footer-bg: #031440;
+    --color-footer-card-bg: #4c4c4c;
+    --color-border: #e0e0e0;
+    --font-primary: 'Inter', sans-serif;
+    --font-secondary: 'Poppins', sans-serif;
+    --font-tertiary: 'Geist', sans-serif; /* Fallback will be sans-serif */
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+button {
+    font-family: var(--font-primary);
+}
+
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: var(--font-secondary);
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.details-link img {
+    width: 10px!important;
+    height: 10px!important;
+    object-fit: contain!important;
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 75px;
+}
+
+.section-title {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: -1.44px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.48px;
+    text-align: center;
+    color: var(--color-text-primary);
+    max-width: 625px;
+    margin: 0 auto 60px;
+}
+
+.grid {
+    display: grid;
+    gap: 24px;
+}
+
+@media (max-width: 1024px) {
+    .section-title {
+        font-size: 36px;
+    }
+    .section {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 32px;
+    }
+    .section {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+}
